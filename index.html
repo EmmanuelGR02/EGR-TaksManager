@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="public/style/login.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TM Log In</title>
 </head>
 <body>
     <center><div class='login_div'>
         <form class='login_form'>
+
+          <h1 class='login_msg'>LOG IN</h1>
+            <hr style="margin-top: -10px;">
   
-          <input class='login_username' type='text' placeholder='Username' name='username' maxLength={19}/><br></br>
-          <input class='login_password' type='password' placeholder='Password' name='password' maxLength={30}/><br></br>
+          <input class='login_username' type='text' placeholder='Username' maxlength="19"/><br></br>
+          <input class='login_password' type='password' placeholder='Password' maxlength="30"/><br></br>
   
           <button class='login_button'>Log In</button>
   
-          <p class='dha'>Don't have an account? <a href='signUp.html'>Sing up</a></p>
+          <p class='dha'>Don't have an account? <a style="font-size: medium;" href='./public/html/signUp.html'>Sing Up</a></p>
           
         </form>
       </div></center>
