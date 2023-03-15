@@ -1,6 +1,11 @@
-if (process.env.NODE_ENV !== 'production') {
+const NODE_ENV = process.env.NODE_ENV;
+
+if (NODE_ENV !== 'production') {
     require('dotenv').config();
 }
+
+// const express = require('express');
+// const app = express();
 
 const { MongoClient } = require('mongodb');
 
@@ -36,3 +41,5 @@ async function listDatabases() {
     const data = databasesList.databases.forEach(db => console.log(` - ${db.name}`));
     document.getElementById('title').innerHTML = data;
 };
+
+// app.listen(process.env.PORT || 3000);
