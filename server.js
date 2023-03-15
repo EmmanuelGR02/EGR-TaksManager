@@ -33,5 +33,6 @@ async function listDatabases() {
     databasesList = await client.db().admin().listDatabases();
 
     console.log("Databases:");
-    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+    const data = databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+    document.getElementById('title').innerHTML = data;
 };
